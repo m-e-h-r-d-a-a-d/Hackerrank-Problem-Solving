@@ -18,9 +18,6 @@ func funnyString(s string) string {
 		}
 		asci = append(asci, a)
 	}
-
-	fmt.Println(s)
-	fmt.Println(asci)
 	length := len(asci)
 
 	for i := 0; i < length/2; i++ {
