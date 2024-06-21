@@ -22,7 +22,6 @@ func weightedUniformStrings(s string, queries []int32) []string {
 		}
 
 		counter += int32(v) - 96
-		fmt.Println(counter)
 		if _, ok := dic[counter]; !ok {
 			dic[counter] = struct{}{}
 		}
