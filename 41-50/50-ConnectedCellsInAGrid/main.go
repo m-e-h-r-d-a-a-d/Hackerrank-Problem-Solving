@@ -38,7 +38,6 @@ func connectedCell(matrix [][]int32) int32 {
 		for j := range m {
 			if matrix[i][j] == 1 {
 				c := calculateConnected(matrix, i, j)
-				fmt.Println(c)
 				if c > max {
 					max = c
 				}
