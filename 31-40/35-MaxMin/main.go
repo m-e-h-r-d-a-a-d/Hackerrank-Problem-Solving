@@ -20,7 +20,6 @@ func maxMin(k int32, arr []int32) int32 {
 	min := int32(100000000)
 	for i := 0; i < count; i++ {
 		diff := arr[i+kk] - arr[i]
-		fmt.Println(diff)
 		if min > diff {
 			min = diff
 		}
