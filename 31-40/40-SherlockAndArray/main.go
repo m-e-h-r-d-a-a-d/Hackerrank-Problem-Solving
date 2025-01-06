@@ -27,7 +27,7 @@ func balancedSums(arr []int32) string {
 }
 
 func main() {
-	osFile, err := os.Open("TestCase2.txt")
+	osFile, err := os.Open("TestCase1.txt")
 	checkError(err)
 	reader := bufio.NewReader(osFile)
 
@@ -55,7 +55,7 @@ func main() {
 
 		result := balancedSums(arr)
 
-		fmt.Fprintf(writer, "%s\n", result)
+		fmt.Println(result)
 	}
 
 	writer.Flush()
